@@ -11,7 +11,6 @@ func Test_Solve(t *testing.T) {
 		{2, 4, 2},
 		{1, 4, 2},
 		{5, 4, 1},
-		{1, 9, 1},
 	}
 
 	for _, el := range tests {
