@@ -1,13 +1,24 @@
 package hammingdistance
 
-import "testing"
+import (
+	"testing"
+)
 
 func Test_Solve(t *testing.T) {
-	x := 2
-	y := 4
-	expected := 4
-	res := Solve(x, y)
-	if expected != res {
-		t.Fatalf("expected %d go %d", expected, res)
+	tests := []struct {
+		x, y, expected int
+	}{
+		{2, 4, 2},
+		{1, 4, 2},
+		{5, 4, 1},
+		{1, 9, 1},
+	}
+
+	for _, el := range tests {
+		res := Solve(el.x, el.y)
+		if el.expected != res {
+			t.Logf("x: %d, y: %d, res: %d", el.x, el.y, res)
+			t.Fatalf("expected %d got %d", el.expected, res)
+		}
 	}
 }
