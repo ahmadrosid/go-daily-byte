@@ -1,5 +1,7 @@
 # Minimize Path
-This question is asked by Google. Given an NxM matrix, grid, where each cell in the matrix represents the cost of stepping on the current cell, return the minimum cost to traverse from the top-left hand corner of the matrix to the bottom-right hand corner.
+This question is asked by Google.
+
+Given an NxM matrix, grid, where each cell in the matrix represents the cost of stepping on the current cell, return the minimum cost to traverse from the top-left hand corner of the matrix to the bottom-right hand corner.
 
 Note: You may only move down or right while traversing the grid.
 

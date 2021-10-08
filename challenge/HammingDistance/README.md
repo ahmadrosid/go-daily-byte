@@ -1,6 +1,8 @@
 # Hamming Distance
 
-This question is asked by Facebook. Given two integers x and y, return the hamming distance between the two numbers.
+This question is asked by Facebook.
+
+Given two integers x and y, return the hamming distance between the two numbers.
 
 Note: The hamming distance between two numbers is the number of bit positions in which the bits differ.
 
