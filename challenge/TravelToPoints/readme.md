@@ -1,0 +1,17 @@
+# Travel to Points
+This question is asked by Facebook. Given N points on a Cartesian plane, return the minimum time required to visit all points in the order that they’re given.
+
+Note: You start at the first point and can move one unit vertically, horizontally, or diagonally in a single second.
+
+Ex: Given the following points
+
+```bash
+points = [[0, 0], [1,1], [2,2]], return 2.
+In one second we can travel from [0, 0] to [1, 1]
+In another second we can travel from [1, 1,] to [2, 2]
+```
+
+Ex: Given the following points
+```bash
+points = [[0, 1], [2, 3], [4, 0]], return 5.
+```
