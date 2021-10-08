@@ -3,21 +3,21 @@ package minimizepath
 import "testing"
 
 func Test_Solve(t *testing.T) {
-	paths := []Path{
+	paths := [][]int{
 		{1, 1, 3},
 		{2, 3, 1},
 		{4, 6, 1},
 	}
 	tests := []struct {
-		Paths    []Path
-		Expected string
+		Paths    [][]int
+		Expected int
 	}{
-		{paths, "1->1->3->1->1"},
+		{paths, 7},
 	}
 	for _, data := range tests {
 		res := Solve(data.Paths)
 		if res != data.Expected {
-			t.Fatalf("expected: '%s' got: '%s'", data.Expected, res)
+			t.Fatalf("expected: '%d' got: '%d'", data.Expected, res)
 		}
 	}
 }
